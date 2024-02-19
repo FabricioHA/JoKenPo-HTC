@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head><!--A tag head é a primeira tag a ser rodada no html, sendo ela o principal meio para rodar elementos de estilização ou regras do site-->
+        <meta charset="UTF-8"><!--Essa tag informa que os caracteres especiais serão lidos e aplicados no site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Essa tag informa que o site é responsivo-->
+        <title>JoKenPo Hall to Code</title>
+
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+
+        <!--Estilo css-->
+        <link rel="stylesheet" href="reset.css"> <!--Arquivo já feito retirando todos os padrões do html e css-->
+        <link rel="stylesheet" href="styles.css"> <!--Sempre busque colocar o style css depois de todas as configurações disponíveis -->
+    </head>
+    <body><!--O corpo da aplicação, onde ficarão os elementos que serão carregados e mostrados ao usuário no site-->
+        <header><!--Ele é basicamente a parte de cima do site que fica visivel ao usuário, apenas para diferenciação e organização do site.-->
+            <h1 class="winner-title">Clique em iniciar</h1>
+            <div class="scoreboard-box">
+                <span class="player-name">Jogador 1</span>
+                <span class="score score-1">00</span>
+                <span class="versus-separator">vs</span>
+                <span class="score score-2">00</span>
+                <span class="player-name">Jogador 2</span>
+            </div>
+        </header>
+        <main class="battle-field">
+            <div class="button-move-wrapeer">
+                <button class="button-move button-move-stone-1">Pedra</button>
+                <button class="button-move button-move-paper-1">Papel</button>
+                <button class="button-move button-move-scissor-1">Tesoura</button>
+            </div>
+            <div class="board">
+                <div class="move-box" id="move-box-1">
+
+                </div>
+                <span class="versus-separator">vs</span>
+                <div class="move-box" id="move-box-2">
+                </div>
+            </div>
+            <div class="button-move-wrapeer">
+                <button class="button-move button-move-stone-2">Pedra</button>
+                <button class="button-move button-move-paper-2">Papel</button>
+                <button class="button-move button-move-scissor-2">Tesoura</button>
+            </div>
+        </main>
+        <footer class="config-box">
+            <button class="button-move button button-start-game">Iniciar</button>
+            <button class="button-move button-game-reset">Resetar</button>
+        </footer>
+    </footer>
+    <script src="index.js"></script>
+    </body>
+</html>
+
+<!--JavaScript é uma linguagem diferente de JAVA. Não se esqueça :) -->
